@@ -1,0 +1,21 @@
+<div class="card">
+    <p-tabView [scrollable]="true" (onChange)="onTabChange($event)">
+
+        <p-tabPanel header="Productos en Inventario">
+            <ng-template pTemplate="content">
+                <ng-container *ngIf="activeIndex === 0">
+                    <p> producto 1</p>
+                </ng-container>
+            </ng-template>
+        </p-tabPanel>
+    
+        <p-tabPanel header="Productos">
+            <ng-template pTemplate="content">
+                <ng-container *ngIf="activeIndex === 1">
+                    <p> producto 2</p>
+                </ng-container>
+            </ng-template>
+        </p-tabPanel>
+    
+    </p-tabView>
+</div>
