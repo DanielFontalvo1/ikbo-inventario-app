@@ -4,7 +4,7 @@
         <p-tabPanel header="Productos en Inventario">
             <ng-template pTemplate="content">
                 <ng-container *ngIf="activeIndex === 0">
-                    <p> producto 1</p>
+                    <app-productos-inventario></app-productos-inventario>
                 </ng-container>
             </ng-template>
         </p-tabPanel>
@@ -12,7 +12,7 @@
         <p-tabPanel header="Productos">
             <ng-template pTemplate="content">
                 <ng-container *ngIf="activeIndex === 1">
-                    <p> producto 2</p>
+                    <app-productos></app-productos>
                 </ng-container>
             </ng-template>
         </p-tabPanel>
