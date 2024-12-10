@@ -36,4 +36,14 @@ export class ProductoInventarioService {
     return this.http.post<any>(url, productoInvetario);
   }
 
+  updateProductoInventario(productoInvetario: ProductoInvetario): Observable<any>{
+    const url = this.baseUrl+'/actualizar-producto-invetario';
+    return this.http.post<any>(url, productoInvetario);
+  }
+
+  inactivarProductoInventario(productoInvetario: ProductoInvetario): Observable<any>{
+    const url = this.baseUrl+'/inactivar-producto-inventario';
+    return this.http.post<any>(url, productoInvetario);
+  }
+
 }
